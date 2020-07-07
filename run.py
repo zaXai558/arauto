@@ -29,9 +29,9 @@ description =   '''
                 financial data, network traffic, sales, and much more.
                 '''
 # Description
-st.image('img/banner.png')
-st.write('*An equivalent exchange: you give me data, I give you answers*')
-st.write(description)
+#st.image('img/banner.png')
+#st.write('*An equivalent exchange: you give me data, I give you answers*')
+#st.write(description)
 
 ### SIDEBAR
 st.sidebar.title('Your data')
@@ -191,7 +191,7 @@ if train_model:
         confidence_interval.columns = ['ci_lower', 'ci_upper']
         plot_forecasts(forecasts, confidence_interval, data_frequency)
 
-    st.write('# Here\'s your code')
-    st.markdown(generate_code(filename, ds_column, y, test_stationarity_code, test_set_size, 
-                              seasonality, p, d, q, P, D, Q, s, exog_variables_names, transformation_function, 
-                              periods_to_forecast, data_frequency))
+    #st.write('# Here\'s your code')
+    #st.markdown(generate_code(filename, ds_column, y, test_stationarity_code, test_set_size, 
+     #                         seasonality, p, d, q, P, D, Q, s, exog_variables_names, transformation_function, 
+      #                        periods_to_forecast, data_frequency))
