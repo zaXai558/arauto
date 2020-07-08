@@ -189,6 +189,7 @@ if train_model:
             confidence_interval = final_model.get_forecast(periods_to_forecast).conf_int()
 
         confidence_interval.columns = ['ci_lower', 'ci_upper']
+        print(ci_lower,ci_upper)
         plot_forecasts(forecasts, confidence_interval, data_frequency)
 
     #st.write('# Here\'s your code')
