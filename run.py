@@ -190,7 +190,7 @@ if train_model:
 
         confidence_interval.columns = ['ci_lower', 'ci_upper']        
         plot_forecasts(forecasts, confidence_interval, data_frequency)
-        st.markdown(print(confidence_interval.columns))
+        
 
     #st.write('# Here\'s your code')
     #st.markdown(generate_code(filename, ds_column, y, test_stationarity_code, test_set_size, 
