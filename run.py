@@ -188,9 +188,9 @@ if train_model:
             forecasts = final_model.forecast(periods_to_forecast)
             confidence_interval = final_model.get_forecast(periods_to_forecast).conf_int()
 
-        confidence_interval.columns = ['ci_lower', 'ci_upper']
-        print(confidence_interval)
+        confidence_interval.columns = ['ci_lower', 'ci_upper']        
         plot_forecasts(forecasts, confidence_interval, data_frequency)
+        st.markdown(print(confidence_interval))
 
     #st.write('# Here\'s your code')
     #st.markdown(generate_code(filename, ds_column, y, test_stationarity_code, test_set_size, 
